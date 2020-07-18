@@ -42,7 +42,7 @@ $(document).ready(function () {
         function () {
             b = ($(this).attr('src'));
             // console.log(b);
-            $(this).parent().css({ background: 'url(' + b + ')' + 'center' + '/' + 'auto' });
+            $(this).parent().css({ background: 'url(' + b + ')' + 'center' + '/' + 'cover' });
             $(this).addClass('del');
             $('.del').css('display', 'none');
         }

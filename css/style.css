@@ -140,7 +140,7 @@ body {
   z-index: 5000;
   width: 50px;
   height: 50px;
-  top: 50px;
+  top: 30px;
   border-radius: 5px;
   background-color: rgba(213, 161, 41, 0.8);
   cursor: pointer;
@@ -764,8 +764,9 @@ body {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 30%;
   flex: 0 0 30%;
-  background-size: contain !important;
   background-repeat: no-repeat !important;
+  -webkit-box-shadow: 0px 4px 5px #2a4a2d;
+  box-shadow: 0px 4px 5px #2a4a2d;
 }
 
 .text-job {
@@ -830,6 +831,10 @@ body {
 }
 
 .privilege-body__line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
   font-size: 30px;
   line-height: 48px;
   text-transform: uppercase;
@@ -1145,10 +1150,10 @@ body {
   font-size: 0;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
   position: relative;
+  padding: 30px 0 15px;
 }
 
 .footer-body__logo {
@@ -1167,7 +1172,7 @@ body {
   flex: 1 1 33.3333%;
   text-align: center;
   font-size: 20px;
-  margin: 0 30px;
+  margin: 30px 30px;
 }
 
 .footer-body__mail a {
@@ -1202,6 +1207,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   font-size: 0;
+  width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .footer-body__img {
@@ -1401,7 +1410,6 @@ body {
   }
 
   .footer-body__cont {
-    margin-left: -30px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -1426,9 +1434,6 @@ body {
 
   .privilege-body__img {
     margin-right: 10px;
-    -webkit-transform: translateY(-15px);
-    -ms-transform: translateY(-15px);
-    transform: translateY(-15px);
   }
 
   .privilege-body__line {
@@ -1455,7 +1460,7 @@ body {
   }
 
   .swiper-container2 {
-    width: 320px;
+    width: 260px;
   }
 }
 
@@ -1546,5 +1551,11 @@ body {
 
   .contacts-body__title {
     margin-bottom: 30px;
+  }
+
+  .text-job__text {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 15px;
   }
 }
